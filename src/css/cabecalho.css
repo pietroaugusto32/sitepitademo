@@ -1,0 +1,156 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    
+}
+
+.logo-container a{
+    display: inline-block;
+    text-decoration: none;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 130px;
+  height: auto;
+}
+
+/*Ícone do menu hamburguer*/
+.menu-toggle {
+  display: none;
+  height: 3px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #22422F;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/*Navegação Desktop*/
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 12000;
+}
+
+.nav-menu ul li {
+  position: relative;
+}
+
+.nav-menu ul li a {
+  font-family: 'Source Serif 4';
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #A69256;
+  padding: 10px 40px;
+  display: block;
+  transition: 0.2s;
+}
+
+.nav-menu ul li a:hover {
+  background: #22422F;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Submenu */
+.drop-hover .drop {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.drop-hover:hover .drop {
+  display: block;
+}
+
+.drop-hover .drop li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+/*Menu e Submenu*/
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    color: #22422F;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+.logo-container {
+    padding-top: 5px; /* mais espaço acima da logo em mobile/tablet */
+    margin-left: -5%;
+    
+  }
+
+  .nav-menu {
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* abaixo do header */
+    right: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 12000;
+  }
+
+  .nav-menu ul.active {
+    display:flex;
+  }
+
+  .nav-menu ul li{
+    margin: 2px 0;
+  }
+
+  .nav-menu ul li a {
+    padding: 9px 20px;
+    width: 100%;
+  }
+
+  .drop-hover .drop {
+    position: static;
+    box-shadow: none;
+  }
+
+  .drop-hover:hover .drop {
+    display: none;
+  }
+
+  .drop-hover.open .drop {
+    display: block;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- 1. Codificação e responsividade primeiro -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 2. SEO: título e metas descritivas -->
+    <title>Projeto 2</title>
+    <meta name="description" content="Projetos de arquitetura, cenografia e expografia em Salvador. Design contemporâneo, funcional e sustentável.">
+    <meta name="keywords" content="arquitetura, cenografia, expografia arquitetura residencial, Salvador, Bahia, arquiteta">
+    <meta name="author" content="Desenvolvido por Pietro Augusto para Ashè Arquitetura">
+<!-- 3. Favicon e fontes/icons -->
+    <link rel="shortcut icon" href="./src/imgs/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- 4. CSS (reset primeiro, depois estilos específicos) -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/cabecalho.css">
+</head>
+
+<body>
+    <header> <!-----Cabeçalho, logotipo e menu----->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="./src/imgs/logo.png" alt="">
+            </a>
+        </div>
+
+        <!--Menu Hamburguer-->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+        </button>
+
+        <!--Menu e submenu-->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <!--criando submenus-->
+                    <li class="drop-hover"><a href="portfolio.html">Portfolio</a>
+                        <div class="drop">
+                            <a href="arquitetura.html">Arquitetura</a>
+                            <a href="cenografia.html">Cenografia</a>
+                            <a href="expografia.html">Expografia</a>
+                        </div>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        <!--</section>/Menu e submenu-->
+    </header><!--/cabeçalho, logotipo e menu-->
+
+<main class="principal">
+<section class="info-projeto">
+        <div class="texto-galeria">
+            <h2>Projeto 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur esse magni animi
+                doloremque non aliquid tenetur soluta at in eum iusto, nam earum, praesentium nemo reiciendis
+                voluptatum quam nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                facilis illum ullam maxime, hic ducimus laudantium nostrum sunt qui, quis repudiandae deleniti
+                maiores magnam suscipit rerum amet repellendus, tempora natus! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nulla dicta eligendi asperiores. Eos ratione ad voluptate
+                reprehenderit provident similique facilis maxime voluptatem nulla, beatae hic quis, fugiat neque,
+                eveniet assumenda?
+                <br>
+                <br>
+                <span>Ano:</span> xx/xx | <span>Duração:</span> xx-xx | <span>Local:</span> xxxx-xx |
+                <span>Formato:</span> xxxx | <span>Alcance:</span> xxxxxx
+            </p>
+        </div>
+    </section>
+
+    <div class="container-galeria">
+        <figure>
+            <img src="./src/imgs/projetos/expo/p2/expo1.webp" alt="">            
+        </figure>
+        <figure>
+            <img src="./src/imgs/projetos/expo/p2/expo2.webp" alt="">
+        </figure>
+        <figure>
+            <img src="./src/imgs/projetos/expo/p2/expo5.webp" alt="">
+          </figure>
+        <figure>
+            <img src="./src/imgs/projetos/expo/p2/expo3.webp" alt="">
+        </figure>
+        <figure>
+            <img src="./src/imgs/projetos/expo/p2/expo4.webp" alt="">
+        </figure>
+        
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <figure>
+            <img src="" alt="">
+        </figure>
+    </div>
+</main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

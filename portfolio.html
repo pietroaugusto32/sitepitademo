@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- 1. Codificação e responsividade primeiro -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 2. SEO: título e metas descritivas -->
+    <title>Portfólio</title>
+    <meta name="description" content="Explore o portfólio de Eunice Pita com projetos de arquitetura, interiores, cenografia e expografia em Salvador e região.">
+    <meta name="keywords" content="portfólio arquitetura, projetos cenografia, interiores, expografia, Salvador, Eunice Pita">
+    <meta name="author" content="Desenvolvido por Pietro Augusto para Ashè Arquitetura">
+<!-- 3. Favicon e fontes/icons -->
+    <link rel="shortcut icon" href="./src/imgs/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- 4. CSS (reset primeiro, depois estilos específicos) -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/cabecalho.css">
+    <link rel="stylesheet" href="./src/css/areas.css">
+</head>
+<body>
+    <header> <!-----Cabeçalho, logotipo e menu----->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="./src/imgs/logo.png" alt="">
+            </a>
+        </div>
+
+        <!--Menu Hamburguer-->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+        </button>
+
+        <!--Menu e submenu-->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <!--criando submenus-->
+                    <li class="drop-hover"><a href="portfolio.html">Portfolio</a>
+                        <div class="drop">
+                            <a href="arquitetura.html">Arquitetura</a>
+                            <a href="cenografia.html">Cenografia</a>
+                            <a href="expografia.html">Expografia</a>
+                        </div>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        <!--</section>/Menu e submenu-->
+    </header><!--/cabeçalho, logotipo e menu-->
+
+        <!--Portfolio-->
+        <section class="secao portfolio" id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="container">
+                <div class="box">
+                    <img src="./src/imgs/ceno.jpg" alt="Cenografia">
+                    <div class="box-titulo">
+                        <a href="cenografia.html" class="link"><h3>Cenografia</h3></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./src/imgs/arq.jpg" alt="arquitetura">
+                    <div class="box-titulo">
+                        <a href="arquitetura.html" class="link"><h3>Arquitetura</h3></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./src/imgs/exp.jpg" alt="expografia">
+                    <div class="box-titulo">
+                        <a href="expografia.html" class="link"><h3>Expografia</h3></a>
+                    </div>
+                </div>
+        </div>
+        </section> <!--/Portfolio-->
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
