@@ -58,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Toggle menu hamburguer
   menuToggle.addEventListener('click', () =>{
-    //const menuList = navMenu.querySelector('ul');
-    //menuList.classList.toggle('active');
     navMenu.querySelector('ul').classList.toggle('active');
     icon.classList.toggle('bi-list');
     icon.classList.toggle('bi-x');
@@ -75,3 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
