@@ -2,18 +2,20 @@
 <html lang="pt-br">
 
 <head>
-<!-- 1. Codificação e responsividade primeiro -->
+    <!-- 1. Codificação e responsividade primeiro -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 2. SEO: título e metas descritivas -->
+    <!-- 2. SEO: título e metas descritivas -->
     <title>Contato</title>
-    <meta name="description" content="Entre em contato com Eunice Pita para orçamentos, dúvidas ou parcerias em projetos de arquitetura, cenografia e expografia. Atendimento em Salvador e região.">
-    <meta name="keywords" content="contato arquitetura, Eunice Pita, Salvador, orçamentos, projetos, arquiteta, cenografia, expografia">
+    <meta name="description"
+        content="Entre em contato com Eunice Pita para orçamentos, dúvidas ou parcerias em projetos de arquitetura, cenografia e expografia. Atendimento em Salvador e região.">
+    <meta name="keywords"
+        content="contato arquitetura, Eunice Pita, Salvador, orçamentos, projetos, arquiteta, cenografia, expografia">
     <meta name="author" content="Desenvolvido por Pietro Augusto para Ashè Arquitetura">
-<!-- 3. Favicon e fontes/icons -->
+    <!-- 3. Favicon e fontes/icons -->
     <link rel="shortcut icon" href="./src/imgs/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!-- 4. CSS (reset primeiro, depois estilos específicos) -->
+    <!-- 4. CSS (reset primeiro, depois estilos específicos) -->
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/cabecalho.css">
@@ -29,56 +31,64 @@
 
         <!--Menu Hamburguer-->
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-                <i class="bi bi-list"></i>
+            <i class="bi bi-list"></i>
         </button>
 
         <!--Menu e submenu-->
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <!--criando submenus-->
-                    <li class="drop-hover"><a href="portfolio.html">Portfolio</a>
-                        <div class="drop">
-                            <a href="arquitetura.html">Arquitetura</a>
-                            <a href="cenografia.html">Cenografia</a>
-                            <a href="expografia.html">Expografia</a>
-                        </div>
-                    </li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <!--criando submenus-->
+                <li class="drop-hover"><a href="portfolio.html">Portfolio</a>
+                    <div class="drop">
+                        <a href="arquitetura.html">Arquitetura</a>
+                        <a href="cenografia.html">Cenografia</a>
+                        <a href="expografia.html">Expografia</a>
+                    </div>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
         <!--</section>/Menu e submenu-->
     </header><!--/cabeçalho, logotipo e menu-->
 
     <!--Contato-->
-    <div class="contact">
+    <section class="contact">
         <div class="contact-info">
             <h2>Entre em Contato</h2>
-            <a href="https://wa.me/557191669459" target="_blank"><i class="bi bi-whatsapp"></i>
-                (71) 9 9166-9459
-            </a>
-            <a href="mailto:contato@ashe.arq.br" target="_blank"><i class="bi bi-envelope"></i>contato@ashe.arq.br</a>
-            <a href="mailto:contatopitanice@gmail.com" target="_blank"><i class="bi bi-envelope"></i>contatopitanice@gmail.com</a>
-            <strong><i class="bi bi-geo-alt" ></i> Salvador - Bahia</strong>
+            <p>Entre em contato para solicitar um orçamento <br> esclarecer dúvidas ou propor parcerias.</p>
+
+            <p><strong>Email</strong>
+                <a href="mailto:contato@ashe.arq.br" target="_blank"><i class="bi bi-envelope"></i>contato@ashe.arq.br</a>
+            </p>
+
+            <!--<p><strong>Email</strong>
+            <a href="mailto:contatopitanice@gmail.com" target="_blank"><i class="bi bi-envelope"></i>contatopitanice@gmail.com</a></p>-->
+
+            <p><strong>Telefone</strong> <a href="https://wa.me/557191669459" target="_blank"><i class="bi bi-whatsapp"></i> +55 (71) 9 9166-9459</a></p>
+
+            <p><strong>Localização</strong><i class="bi bi-geo-alt"></i>Salvador / Bahia - Brasil</p>
         </div>
 
-        <form action="#" method="post">
-            <h2>Envie uma mensagem</h2>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/pietroaugustocs@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/obrigado.html">
 
-            <label for="nome">Nome Completo</label>
-            <input type="text" name="nome" placeholder="Digite seu nome" class="campo" required/>
+                <label for="nome">Nome Completo</label>
+                <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required />
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="Digite seu e-mail" class="campo"/>
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required />
 
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="50" rows="4" placeholder="Digite sua mensagem"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" id="mensagem" cols="50" rows="4" placeholder="Digite sua mensagem"></textarea>
 
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </div>
-    
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+
     <script src="./src/js/script.js"></script>
 </body>
 

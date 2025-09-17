@@ -51,16 +51,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Menu Hamburguer
+
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
   const icon = menuToggle?.querySelector('i');
 
-  if (menuToggle && navMenu && icon) {
-    menuToggle.addEventListener('click', () => {
-      const menuList = navMenu.querySelector('ul');
-      menuList.classList.toggle('active');
-      icon.classList.toggle('bi-list');
-      icon.classList.toggle('bi-x');
+  //Toggle menu hamburguer
+  menuToggle.addEventListener('click', () =>{
+    //const menuList = navMenu.querySelector('ul');
+    //menuList.classList.toggle('active');
+    navMenu.querySelector('ul').classList.toggle('active');
+    icon.classList.toggle('bi-list');
+    icon.classList.toggle('bi-x');
+  });
+
+  //abrir submenu com seta
+  document.querySelectorAll('.drop-hover > a').forEach(link =>{
+    link.addEventListener('click', e =>{
+    if (window.matchMedia("(max-width: 1024px)").matches){
+      const parent = link.parentElement;
+      parent.classList.toggle('open');
+      };
     });
-  }
+  });
 });

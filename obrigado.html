@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email enviado com sucesso!</title>
+    <title>Mensagem enviada</title>
+
+    <style>
+        body {
+            font-family:Arial, sans-serif;
+            margin: 0;
+            background: #f0f2f5;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caixa {
+            background: #fff;
+            width: 90%;
+            max-width: 400px;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #b05d18;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: #9f581f;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Obrigada</h1>
-    <p>Email enviado com sucesso!</p>
-    <a href="contato.html">Voltar</a>
+    <div class="caixa">
+    <h1>Obrigada!</h1>
+    <p>Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.</p>
+    <a href="index.html">Voltar ao site</a>
+    </div>
+    
 
 </body>
+
 </html>
