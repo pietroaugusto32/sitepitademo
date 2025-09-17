@@ -203,7 +203,6 @@ header{
     /* Submenus no mobile */
 
     .drop-hover .drop {
-        /*position: static;*/
         display: none;
         flex-direction: column;
         width: 100%;
@@ -313,3 +312,4 @@ header{
 }
 
 /*Menu e Submenu*/
+
